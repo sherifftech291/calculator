@@ -1,0 +1,105 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #797999;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background: #a2a9bb;
+    width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(0,0,0,0,1);
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color:#222;
+}
+#display{
+    width:100%;
+    height:65px;
+    margin-bottom:20px;
+    border: 2px solid #327911;
+    outline: 4px solid #a5b4ce;
+    background:#e5e7ec;
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+    font-size: 28px;
+
+}
+.buttons{
+display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+buttons{
+    height: 55px;
+    border: 2px solid #327911;
+    border-radius: 12px;
+    background-color : #913939;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover{
+    background: #5b6980;
+}
+.equal{
+    background: #3978f6;
+    color: white;
+    grid-column: span 2;
+}
+.equal:hover{
+    background: #245ed0;
+} 
+/* calcuator display */
+#dispaly {
+    width: 100%;
+    height: 65px;
+    margin-bottom: 20px;
+    border: none;
+    outline: 4px solid #a8b7cf;
+    background: #718191;
+    border-radius: 10px;
+    font-size: 28px;
+    text-align: right;
+}
+/* arrange button in agrid */
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+/* style individual button */
+.button button {
+    height: 55px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #394a5f;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+/*button hover effect */
+.button button:hover {
+    background: #cbd5e1;
+}
+/* calculator card */
+.calculator {
+    background: #dee0e6;
+    width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
